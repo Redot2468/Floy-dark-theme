@@ -7,6 +7,7 @@
     --color-secondary-article:#21293c;
     --color-accent-footer:#0c1524;
     --color-buttons:#4fc7d5;
+    --color-callout:#1b2330;
     --color-white:#fff;
     --font-raleway:"Raleway", san-serif;
     --font-opensans:"Open Sans", san-serif;
@@ -46,14 +47,14 @@ h2{
 }
 
 h3{
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     margin-bottom:1.6rem;
 }
 
 /* btn */
 
 .btn{
-    padding:2rem 10rem;
+    padding:2rem 5rem;
     border-radius: 30px;
     font-weight: 700;
     letter-spacing: 0.8px;
@@ -68,6 +69,12 @@ h3{
 
 .btn__button:hover{
     background:#8cdae4;
+}
+
+@media screen and (min-width:768px){
+    .btn{
+        padding:2rem 7.5rem;
+    }
 }
 
 /* form */
@@ -94,7 +101,7 @@ h3{
    }
 
    .form .btn__button{
-    margin-top:2rem;
+    margin-top:3rem;
  
    }
 
@@ -103,6 +110,7 @@ h3{
     .form{
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
 
     .form__input{
@@ -200,5 +208,35 @@ h3{
    .profile__name p:last-of-type{
     margin-top:0.5rem;
     font-size: 1.1rem;
+   }
+
+   /* callout */
+   .callout{
+    background: var(--color-callout);
+    text-align:center;
+    padding:3rem 3rem 5rem;
+    margin:2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 7px #0b1320;
+   }
+
+   .callout p{
+    margin-top:2rem;
+   }
+
+  .callout .form{
+        margin-top:4rem;
+   }
+
+   .callout .btn__button{
+    box-shadow:0 0 15px #101a27;
+   }
+
+   @media screen and (min-width:768px){
+        .callout{
+            max-width: 750px;
+            margin:auto;
+            padding:2rem 6rem 5rem;
+        }
    }
 
