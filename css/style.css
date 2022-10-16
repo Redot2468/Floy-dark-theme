@@ -1,0 +1,70 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary-mainbg:#181e2a;
+    --color-secondary-article:#21293c;
+    --color-accent-footer:#0c1524;
+    --color-buttons:#4fc7d5;
+    --color-white:#fff;
+    --font-raleway:"Raleway", san-serif;
+    --font-opensans:"Open Sans", san-serif;
+    --font-heebo:"Heebo", san-serif;
+    
+}
+
+/* typography */
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: #181e2a;
+    font-family: var(--font-opensans);
+    font-weight: 400;
+    font-size: 1.4rem;
+    color:var(--color-white);
+    line-height:1.5;
+}
+
+h1, h2, h3{
+    font-family: var(--font-raleway);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 3.2rem;
+    margin-bottom:1.7rem;
+}
+
+h2{
+    font-size: 2.7rem;
+    margin-bottom:1.7rem;
+}
+
+h3{
+    font-size: 2.2rem;
+    margin-bottom:1.6rem;
+}
+
+/* btn */
+
+.btn{
+    padding:2rem 10rem;
+    border-radius: 30px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.btn__button{
+    background: var(--color-buttons);
+    color:white;   
+    transition: background .2s;
+}
+
+.btn__button:hover{
+    background:#8cdae4;
+}
