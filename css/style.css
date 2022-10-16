@@ -131,6 +131,10 @@ h3{
     border:1px solid lightblue;
    }
 
+   .grid > article{
+    border:1px solid lightblue;
+   }
+
    @media screen and (min-width:768px){
 
     .grid{
@@ -150,5 +154,51 @@ h3{
 
    .feature__image{
     margin-bottom: 2rem;
+   }
+
+   /* testiomonial */
+
+   .testimonial{
+    border:1px solid lightblue;
+    padding:3rem 4rem 2rem 4rem;
+    position:relative;
+    margin:2rem 5rem;
+    background: var(--color-secondary-article);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #1f2636;
+
+   }
+
+   .quote__image{
+    width:30px;
+    position: absolute;
+    bottom:220px;
+    left:0px;
+
+   }
+
+   .profile{
+    display: flex;
+   }
+
+   .avatar{
+    height: 40px;
+    border-radius:100px;
+    align-self: center;
+   }
+
+   .profile__name{
+    margin-left: 2rem;
+    align-self: center;
+   }
+
+   .profile__name p:first-of-type{
+    margin-bottom: 0;
+    font-weight: 700;
+   }
+
+   .profile__name p:last-of-type{
+    margin-top:0.5rem;
+    font-size: 1.1rem;
    }
 
