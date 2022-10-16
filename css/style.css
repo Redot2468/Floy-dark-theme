@@ -22,12 +22,19 @@ html{
 }
 
 body{
-   background-color: #0c1524;
     font-family: var(--font-opensans);
     font-weight: 400;
     font-size: 1.4rem;
     color:var(--color-white);
     line-height:1.5;
+}
+
+main{
+   background: var(--color-primary-mainbg);
+}
+
+header{
+    background: #1c2230;
 }
 
 h1, h2, h3{
@@ -73,7 +80,7 @@ h3{
 
 @media screen and (min-width:768px){
     .btn{
-        padding:2rem 7.5rem;
+        padding:2rem 7rem;
     }
 }
 
@@ -88,7 +95,7 @@ h3{
 
    .email:focus{
     outline:0;
-    box-shadow: 0 0 5px lightblue;
+    
    }
 
    .email::placeholder{
@@ -131,17 +138,7 @@ h3{
     grid-auto-rows:minmax(100px, auto);
    }
 
-   .grid > div{
-    border:1px solid lightblue;
-   }
-
-   .grid > section{
-    border:1px solid lightblue;
-   }
-
-   .grid > article{
-    border:1px solid lightblue;
-   }
+   
 
    @media screen and (min-width:768px){
 
@@ -167,20 +164,22 @@ h3{
    /* testiomonial */
 
    .testimonial{
-    border:1px solid lightblue;
     padding:3rem 4rem 2rem 4rem;
-   
     margin:2rem 5rem;
     background: var(--color-secondary-article);
     border-radius: 5px;
-    box-shadow: 0 0 10px #1f2636;
+    box-shadow: 0 0 20px #181d27;
 
+   }
+
+   .patel__testimonial{
+    padding:0rem 4rem 2rem 4rem;
    }
 
    .quote__image{
     width:30px;
     position: relative;
-    top:-55px;
+    top:-20px;
     left:-40px;
 
    }
@@ -215,9 +214,11 @@ h3{
     background: var(--color-callout);
     text-align:center;
     padding:3rem 3rem 5rem;
-    margin:2rem;
+    margin:3rem 2rem 0;
     border-radius: 10px;
-    box-shadow: 0 0 7px #0b1320;
+    box-shadow: 0 0 10px #0c1524;
+    position: relative;
+    top:180px;
    }
 
    .callout p{
@@ -234,7 +235,7 @@ h3{
 
    @media screen and (min-width:768px){
         .callout{
-            max-width: 750px;
+            max-width: 850px;
             margin:auto;
             padding:2rem 6rem 5rem;
         }
@@ -264,14 +265,12 @@ h3{
    }
 
    .nav__logo{
-    border:1px solid lightblue;
     height:45px;
     align-self: center;
     margin-left: 1rem;
    }
 
    .nav__items{
-    border:1px solid lightblue;
     display:flex;
     flex-direction: row;
     padding-left: 2rem;
@@ -323,6 +322,8 @@ h3{
 .hero__banner{
     text-align: center;
     padding:2rem 4rem;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
 }
 
 .hero__image{
@@ -406,8 +407,7 @@ h3{
 
 /* features block */
 .features__block{
-    padding:3rem;
-    
+    padding:15rem 3rem 3rem 3rem;
 }
 
 .features__block .feature{
@@ -426,12 +426,15 @@ h3{
 }
 
 /* testimonial block */
+.testimonial__block{
+    margin-top:14rem;
+}
 
 @media screen and (min-width:768px){
 
     .testimonial__block{
         max-width: 1200px;
-        margin:auto;
+        margin:10rem auto 0;
     }
     .testimonial__block .testimonial{
         margin-left:2rem;
@@ -442,7 +445,7 @@ h3{
     .quote__image{
         width:30px;
         position: relative;
-       top:-55px;
+       top:-20px;
        left:-40px;
     
        }
@@ -454,16 +457,16 @@ h3{
 /* footer */
 
 footer{
-    border:2px solid lightblue;
     background:var(--color-accent-footer);
     
-        padding-top:200px;
+        padding-top:270px;
         padding-bottom: 2rem;
   
 }
 
 .footer__logo{
     padding-left: 3rem;
+    margin-bottom: .6rem;
 }
 
 .contact{
@@ -538,12 +541,11 @@ footer{
 @media screen and (min-width:768px){
 
     footer{
-        height:400px;
-        padding-top:150px;
-        padding-bottom: 8rem;
+        padding-top:270px;
+        padding-bottom: 6rem;
     }
     .footer__socials{
-        justify-self: left;
+        
         align-self: flex-start;
     }
 
