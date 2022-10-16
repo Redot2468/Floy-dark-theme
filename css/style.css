@@ -169,7 +169,7 @@ h3{
    .testimonial{
     border:1px solid lightblue;
     padding:3rem 4rem 2rem 4rem;
-    position:relative;
+   
     margin:2rem 5rem;
     background: var(--color-secondary-article);
     border-radius: 5px;
@@ -179,9 +179,9 @@ h3{
 
    .quote__image{
     width:30px;
-    position: absolute;
-    bottom:220px;
-    left:0px;
+    position: relative;
+    top:-55px;
+    left:-40px;
 
    }
 
@@ -424,6 +424,32 @@ h3{
         margin:0 4rem 8rem;
     }
 }
+
+/* testimonial block */
+
+@media screen and (min-width:768px){
+
+    .testimonial__block{
+        max-width: 1200px;
+        margin:auto;
+    }
+    .testimonial__block .testimonial{
+        margin-left:2rem;
+        margin-right:2rem;
+       
+    }
+
+    .quote__image{
+        width:30px;
+        position: relative;
+       top:-55px;
+       left:-40px;
+    
+       }
+    
+}
+
+
 
 /* footer */
 
