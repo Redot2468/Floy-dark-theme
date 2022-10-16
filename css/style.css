@@ -326,7 +326,7 @@ h3{
 }
 
 .hero__image{
-    width: 70%;
+    width: 75%;
 }
 
 .hero__content{
@@ -362,4 +362,107 @@ h3{
 
     
 
+}
+
+/* footer */
+
+footer{
+    border:2px solid lightblue;
+    background:var(--color-accent-footer);
+    
+        padding-top:200px;
+        padding-bottom: 2rem;
+  
+}
+
+.footer__logo{
+    padding-left: 3rem;
+}
+
+.contact{
+    padding:0 3rem;
+}
+
+.location-section{
+    display: flex;
+    
+
+}
+
+.location-section span{
+    margin-left: 2rem;
+    align-self: center;
+}
+
+.location{
+    height:25px;
+    margin-top:1rem;
+}
+
+.call{
+    padding-left:3rem;
+}
+
+.phone-section img, .email-section img{
+    margin-right:2rem;
+}
+
+.footer__items{
+    padding-left: 2rem;
+}
+
+.footer__items li{
+    list-style: none;
+    margin:1rem;
+}
+
+.footer__items a{
+    text-decoration: none;
+    color:var(--color-white);
+}
+
+
+
+.footer__socials{
+    justify-self: center;
+    align-self: center;
+   
+}
+
+.footer__socials .footer__items{
+    padding-left: 0;
+}
+
+.footer__socials li{
+    display: inline;
+    margin:.7rem;
+}
+
+.footer__socials i{
+    border: 1px solid white;
+    padding:8px;
+    border-radius: 100px;
+}
+
+.footer__socials .fa-facebook-f{
+    padding:8px 11px;
+}
+
+@media screen and (min-width:768px){
+
+    footer{
+        height:400px;
+        padding-top:150px;
+        padding-bottom: 8rem;
+    }
+    .footer__socials{
+        justify-self: left;
+        align-self: flex-start;
+    }
+
+    .footer__about .footer__items{
+        margin-top: 0;
+    }
+
+    
 }
