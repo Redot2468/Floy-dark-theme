@@ -62,7 +62,7 @@ h3{
 }
 
 .btn__button{
-    background: var(--color-buttons);
+    background: linear-gradient(90deg, rgba(93,199,215,1) 35%, rgba(61,174,208,1) 100%);
     color:white;   
     transition: background .2s;
 }
@@ -318,3 +318,48 @@ h3{
        }
    }
 
+/* banner */
+
+.hero__banner{
+    text-align: center;
+    padding:2rem 4rem;
+}
+
+.hero__image{
+    width: 70%;
+}
+
+.hero__content{
+    margin-top:3rem;
+}
+
+.hero__content .btn__button{
+    padding:2rem 10rem;
+    margin-top:2rem;
+    background: linear-gradient(90deg, rgba(93,199,215,1) 35%, rgba(61,174,208,1) 100%);
+}
+
+
+@media screen and (max-width:360px){
+
+    .hero__content .btn__button{
+        padding:2rem 5rem;
+    }
+
+}
+
+
+@media screen and (min-width:768px){
+
+    .hero__banner{
+        max-width:700px;
+        margin:auto;
+    }
+
+    .hero__image{
+        width: 600px;
+    }
+
+    
+
+}
