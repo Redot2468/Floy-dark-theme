@@ -364,6 +364,67 @@ h3{
 
 }
 
+/* productive block */
+
+.productive{
+    text-align: center;
+}
+
+.product__image{
+    width:75%;
+    justify-self: center;
+}
+
+.product__content{
+    text-align: left;
+    margin:3rem 4rem 0;
+}
+
+.product__content h2{
+    font-size: 2.3rem;
+}
+
+.product__content .link{
+    margin-top:2rem;
+}
+
+@media screen and (min-width:768px){
+    .product__image{
+        width:80%;
+    }
+
+    .productive{
+        
+        max-width:1200px;
+        margin: auto;
+    }
+
+    .product__content{
+        align-self: center;
+    }
+}
+
+/* features block */
+.features__block{
+    padding:3rem;
+    
+}
+
+.features__block .feature{
+    margin-bottom: 8rem;
+}
+
+@media screen and (min-width:768px){
+    .features__block{
+        grid-template-columns: repeat(2, 40rem);
+        justify-content: center;
+    }
+
+    .features__block .feature{
+        margin:0 4rem 8rem;
+    }
+}
+
 /* footer */
 
 footer{
