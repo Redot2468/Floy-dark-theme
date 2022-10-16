@@ -256,3 +256,65 @@ h3{
     vertical-align: middle;
    }
 
+   /* nav */
+
+   .nav{
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .nav__logo{
+    border:1px solid lightblue;
+    height:45px;
+    align-self: center;
+    margin-left: 1rem;
+   }
+
+   .nav__items{
+    border:1px solid lightblue;
+    display:flex;
+    flex-direction: row;
+    padding-left: 2rem;
+    margin-right: 4px;
+    
+   }
+
+   .nav__items li{
+    list-style: none;
+    margin:1rem;
+   }
+
+   .nav__items a{
+    text-decoration: none;
+    color:#fff;
+   }
+
+   @media screen and (max-width:350px){
+    .nav__logo{
+        height:35px;
+    }
+
+    .nav__items{
+        padding-left:0;
+    }
+    .nav__items a{
+        font-size: 1.2rem;
+    }
+   }
+
+   @media screen and (min-width:768px){
+
+    .nav__items{
+        margin-right:4rem;
+    }
+
+    .nav__items li{
+        list-style: none;
+        margin:1rem 2rem;
+       }
+
+       .nav__logo{
+        margin-left:4rem;
+       }
+   }
+
