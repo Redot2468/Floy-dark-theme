@@ -240,3 +240,19 @@ h3{
         }
    }
 
+   /* link */
+
+  
+   .link{
+    color:#6ed7da;
+    border-bottom: 1.7px solid #6ed7da;
+    width:fit-content;
+    padding-bottom:3px;
+
+    
+   }
+
+   .arrow{
+    vertical-align: middle;
+   }
+
